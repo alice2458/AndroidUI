@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">UI</string>
+    <string name="bn1">星期一</string>
+    <string name="bn2">星期二</string>
+    <string name="bn3">星期三</string>
+    <string name="bn4">星期四</string>
+    <string name="bn5">星期五</string>
+    <string name="bn6">星期六</string>
+    <string name="bn7">星期日</string>
 </resources>
