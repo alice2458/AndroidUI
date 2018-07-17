@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UI</string>
+    <string name="clear">清除</string>
+    <string name="t0">0</string>
 </resources>
