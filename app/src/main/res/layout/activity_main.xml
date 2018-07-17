@@ -5,35 +5,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="bottom|center_horizontal"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <Button
-        android:layout_width="wrap_content"
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/bn1" />
-    <Button
-        android:layout_width="wrap_content"
+        android:shrinkColumns="1"
+        android:stretchColumns="2">
+
+        <Button
+            android:id="@+id/ok1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok1" />
+
+        <TableRow>
+            <Button
+                android:id="@+id/ok2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok2"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/ok3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok3"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/ok4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok4"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/TableLayout02"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/bn2" />
-    <Button
-        android:layout_width="wrap_content"
+        android:collapseColumns="1">
+
+        <Button
+            android:id="@+id/ok5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok1" />
+
+        <TableRow>
+            <Button
+                android:id="@+id/ok6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok2"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/ok7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok3"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/ok8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok4"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/TableLayout03"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/bn3" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bn4" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bn5" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bn6" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bn7" />
+        android:collapseColumns="1,2">
+
+        <Button
+            android:id="@+id/ok9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok1" />
+
+        <TableRow>
+            <Button
+                android:id="@+id/ok10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok2"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/ok11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok3"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/ok12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok4"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/ok13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok2"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/ok14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok3"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+    </TableLayout>
 </LinearLayout>
