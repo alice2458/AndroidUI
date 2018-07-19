@@ -2,33 +2,31 @@ package com.example.alice.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.widget.Button;
-import android.widget.GridLayout;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
 public class MainActivity extends Activity {
-    GridLayout gridLayout;
-    String[] chars = new String[]{
-            "7", "8", "9", "÷",
-            "4", "5", "6", "×",
-            "1", "2", "3", "-",
-            ".", "0", "=", "+",
-    };
+    @SuppressWarnings("deprecation")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        gridLayout = findViewById(R.id.root);
-        for (int i = 0; i < chars.length; i++) {
-            Button bn = new Button(this);
-            bn.setText(chars[i]);
-            bn.setTextSize(40);
-            bn.setPadding(5, 35, 5, 35);
-            GridLayout.Spec rowSpec = GridLayout.spec(i / 4 + 2);
-            GridLayout.Spec columnSpec = GridLayout.spec(i % 4);
-            GridLayout.LayoutParams params =
-                    new GridLayout.LayoutParams(rowSpec, columnSpec);
-            params.setGravity(Gravity.FILL);
-            gridLayout.addView(bn, params);
-        }
+        LinearLayout layout = new LinearLayout(this);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.FILL_PARENT,
+                ViewGroup.LayoutParams.FILL_PARENT
+        );
+        layout.setOrientation(LinearLayout.VERTICAL);
+        LinearLayout.LayoutParams txtParam = new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.FILL_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+        );
+        TextView txt = new TextView(this);
+        txt.setLayoutParams(txtParam);
+        txt.setTextSize(20);
+        layout.addView(txt,txtParam);
+        txt.setText("Large Team,要一直走到世界尽头。");
+        super.setContentView(layout,params);
     }
 }
